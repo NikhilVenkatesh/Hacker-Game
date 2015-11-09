@@ -9,12 +9,9 @@
 <link rel="stylesheet" type="text/css" href="basic.css" />
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-<!-- <script src="7https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
-
-
-
 </head>
-<body>
+
+<body onbeforeunload="doUnload()" onmousedown="somefunction()">
 	<script type="text/javascript" src="close.js"></script>
 
 	<div class="left">

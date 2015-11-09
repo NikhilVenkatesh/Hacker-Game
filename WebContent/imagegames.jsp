@@ -7,10 +7,10 @@
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 </head>
-<body>
+<body onbeforeunload="doUnload()" onmousedown="somefunction()">
 
 
-	<script type="text/javascript" src="imagecoordinates.js" ></script>
+	<script type="text/javascript" src="imagecoordinates.js"></script>
 	<script type="text/javascript" src="close.js"></script>
 
 	<div class="left">
@@ -24,16 +24,16 @@
 		<div class="block">
 			<h1 style="font-size: 22px; text-align: center">Spot the
 				differences between the two images</h1>
-			<img src="images/men.jpg" align="left"  usemap="#differences" />
-			
+			<img src="images/men.jpg" align="left" usemap="#differences" />
 
-			<map name="differences" >
-				<area alt="" shape="rect" coords="703,426,735,445" 
-					href="javascript: handleEvent()" style="cursor:default"/>
+
+			<map name="differences">
+				<area alt="" shape="rect" coords="703,426,735,445"
+					href="javascript: handleEvent()" style="cursor: default" />
 				<area alt="" shape="rect" coords="789,445,815,438"
-					href="javascript: handleEvent()" style="cursor:default" />
+					href="javascript: handleEvent()" style="cursor: default" />
 				<area alt="" shape="circle" coords="754,373,6"
-					href="javascript: handleEvent()" style="cursor:default" />
+					href="javascript: handleEvent()" style="cursor: default" />
 
 			</map>
 

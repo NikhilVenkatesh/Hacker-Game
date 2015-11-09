@@ -1,35 +1,33 @@
-//var staying_in_site = false;
-window.onbeforeunload = function() {
-	return "Leaving this page may damage your system Hardware."
-	+ "You are not allowed to exit ";
+if (window.addEventListener) {
+	window.addEventListener("close", closedWin, false);
 
 }
 
-	//if (staying_in_site == false) {
-	/*	var arr = [ "http://localhost:8080/Hacker/index.jsp",
-				"http://localhost:8080/Hacker/contact.jsp",
-				"http://localhost:8080/Hacker/imagegames.jsp",
-				"http://localhost:8080/Hacker/qagames.jsp",
-				"http://localhost:8080/Hacker/info.jsp" ];
-
+var isClose = false;
+document.onkeydown = checkKeycode
+function checkKeycode(e) {
+var keycode;
+if (window.event)
+keycode = window.event.keyCode;
+else if (e)
+keycode = e.which;
+if(keycode == 116)
+{
+isClose = true;
+}
+}
+function somefunction()
+{
+isClose = true;
+}
+function doUnload()
+{
+if(!isClose)
+{
+	var arr = [ "index.jsp", "contact.jsp", "imagegames.jsp",
+				"qagames.jsp", "info.jsp" ];
 		var rand = arr[Math.floor(Math.random() * arr.length)];
-
-		var flag = false;
-		for (var j = 0; j < arr.length; j++) {
-			if (window.location.href == arr[j]) {
-				flag = true;
-			}
-		}
-		window.alert(flag);
-
-		if (!flag) {
-			var a = window.open(rand, "_blank");
-			// confirm("close ?");
-			a.focus();
-			return "Leaving this page may damage your system Hardware."
-					+ "You are not allowed to exit ";
-
-		}
-
-	}*/
-//}
+		window.open(rand, "_blank");
+		return "Leaving this page may harm your computer";
+}
+}

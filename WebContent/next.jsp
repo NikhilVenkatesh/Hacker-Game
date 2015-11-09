@@ -7,12 +7,11 @@
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 </head>
-<body>
+<body onbeforeunload="doUnload()" onmousedown="somefunction()">
 
 
 	<script type="text/javascript" src="imagecoordinates.js"></script>
-		<script type="text/javascript" src="close.js"></script>
-	
+	<script type="text/javascript" src="close.js"></script>
 
 	<div class="left">
 
