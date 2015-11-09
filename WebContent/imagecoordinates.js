@@ -1,13 +1,11 @@
-handleEvent.uniqueID=0;
+handleEvent.uniqueID = 0;
 function handleEvent() {
 
-	
 	handleEvent.uniqueID = ++handleEvent.uniqueID;
-	alert("Success "+handleEvent.uniqueID);
+	window.alert("You found " + handleEvent.uniqueID+" difference");
 	if (handleEvent.uniqueID == 3) {
 
-		alert("Success");
-		document.getElementById("found").innerHTML = "You have found the diffrences";
+		document.getElementById("found").innerHTML = "You have successfully found the differences";
 		document.getElementById("Link").href = "next.jsp";
 
 	}
