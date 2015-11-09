@@ -6,10 +6,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Author</title>
 <link rel="stylesheet" type="text/css" href="basic.css" />
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
-<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 </head>
-<body>
+<body onbeforeunload="doUnload()" onmousedown="somefunction()">
 	<script type="text/javascript" src="close.js"></script>
 
 	<div class="left">
