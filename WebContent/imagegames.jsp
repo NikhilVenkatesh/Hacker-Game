@@ -20,33 +20,38 @@
 	</div>
 
 	<div class="right">
+		<h1 style="font-size: 22px; text-align: center;">Spot any 3
+			differences between the two images.</h1>
+		<br /> <br /> <br /> <img
+			style="margin-left: 20px; padding-top: 0px" src="images/men.jpg"
+			usemap="#differences" />
 
-		<div class="block">
-			<h1 style="font-size: 22px; text-align: center">Spot the
-				differences between the two images</h1>
-			<img src="images/men.jpg" align="left" usemap="#differences" />
+		<map name="differences">
+			<area alt="" shape="rect" coords="555,300,580,318"
+				href="javascript: handleEvent()" style="cursor: default" />
+			<area alt="" shape="rect" coords="623,306,650,320"
+				href="javascript: handleEvent()" style="cursor: default" />
+			<area alt="" shape="rect" coords="745,50,750,100"
+				href="javascript: handleEvent()" style="cursor: default" />
+			<area alt="" shape="circle" coords="599,258,8"
+				href="javascript: handleEvent()" style="cursor: default" />
+			<area alt="" shape="circle" coords="520,275,10"
+				href="javascript: handleEvent()" style="cursor: default" />
+		</map>
 
-
-			<map name="differences">
-				<area alt="" shape="rect" coords="703,426,735,445"
-					href="javascript: handleEvent()" style="cursor: default" />
-				<area alt="" shape="rect" coords="789,445,815,438"
-					href="javascript: handleEvent()" style="cursor: default" />
-				<area alt="" shape="circle" coords="754,373,6"
-					href="javascript: handleEvent()" style="cursor: default" />
-
-			</map>
-
-			<h2 style="font-size: 10; text-align: center" id="found"></h2>
-			<a style="font-size: 10; text-align: center" id="Link" href="#">
-				Next Game</a>
-			<div id="footer" style="margin-top: 100px; width: 500px">
-				<jsp:include page="footer.jsp"></jsp:include>
-			</div>
-
+		<br /> <br /> <br /> <br />
+		<h2 style="font-size: 22px; text-align: center" id="found"></h2>
+		<h1 style="font-size: 22px; text-align: center">
+			<a style="font-size: 17; text-align: center" id="Link" href="#">
+				<< Next Game >></a>
+		</h1>
+		<div id="footer" style="margin-top: 100px; width: 500px">
+			<jsp:include page="footer.jsp"></jsp:include>
 		</div>
 
 	</div>
+
+
 
 </body>
 </html>
