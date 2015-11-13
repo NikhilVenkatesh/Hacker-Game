@@ -9,38 +9,96 @@
 </head>
 <body onbeforeunload="doUnload()" onmousedown="somefunction()">
 	<script type="text/javascript" src="close.js"></script>
+	<script type="text/javascript" src="formaction.js"></script>
 	<div class="left">
 
 		<jsp:include page="menu.jsp"></jsp:include>
 
 	</div>
 
-	<div class="right">
+	<div class="right" style="margin: 0px 100px; text-align: justify;">
 
-		<img src="images/services.gif" style="border: none; margin: 0;"
-			alt="portfolio" /> <img src="images/set images/1.png"
-			style="border: none; margin: 0;" /> <img src="images/set 1.png"
-			style="border: none; margin: 0;" /> <input type="radio"
-			name="set 1.png"></input>
-
-		<div class="content">
-			<h1>What is lorem ipsum?</h1>
-			<h2>December 2007</h2>
-			<p>
-				This is Business, a free, fully standards-compliant CSS template
-				designed by <a href="http://www.free-css-templates.com/">Free
-					CSS Templates</a>. This free template is released under a Creative
-				Commons Attributions 2.5 license, so you're pretty much free to do
-				whatever you want with it (even use it commercially) provided you
-				keep the links in the footer intact. Aside from that, have fun with
-				it :)
-			</p>
-
-			<div id="footer" style="margin-top: 100px; width: 500px">
-				<jsp:include page="footer.jsp"></jsp:include>
+		<form name="form1" method="post" action="#" >
+			<h1>1. You are standing in one big palace where 5 soldiers stay.
+				Each soldier has 5 rooms. In each room there are 5 big tigers. Each
+				big tiger has 5 little tigers. Each tiger has 4 legs. How many legs
+				are there in the palace?
+			</h1>
+			<br/> 
+			
+			<input type="radio" id="ques1opt1" name="ques1" value="ques1radio1"/> 3012 
+			<br /> <br /> 
+			<input type="radio" id="ques1opt2" name="ques1" value="ques1radio2" /> 3010 
+			<br /> <br />
+			<input type="radio" id="ques1opt3" name="ques1" value="ques1radio3" /> 2000 
+			<br /> <br />
+			
+			
+			<div class ="question2">
+			<h1>2. There are eight identical-looking coins; one of these
+				coins is counterfeit and is known to be lighter than the genuine
+				coins. What is the minimum number of weighings needed to identify
+				the fake coin with a two-pan balance scale without weights?
+			</h1>
+			<br /> 
+			<input type="radio" id="ques2opt1" name="ques2" value="ques2radio1" /> One 
+			<br /> <br /> 
+			<input type="radio" id="ques2opt2" name="ques2" value="ques2radio2" /> Two 
+			<br /> <br /> 
+			<input type="radio" id="ques2opt3" name="ques2" value="ques2radio3" /> Three
+			<br /> <br />
 			</div>
-		</div>
 
+
+			<div class ="question3">
+			<h1>
+				3.How many squares are there in the picture?
+				<br /> 
+				<img src="images/squares.png" />
+			</h1>
+			<br /> 
+			<input type="radio" id="ques3opt1" name="ques3" value="ques3radio1" /> 32 
+			<br /> <br /> 
+			<input type="radio" id="ques3opt2" name="ques3" value="ques3radio2" /> 38 
+			<br /> <br /> 
+			<input type="radio" id="ques3opt3" name="ques3" value="ques3radio3" /> 40
+			<br /> <br />
+			</div>
+
+			<div class ="question4">
+			<h1>4. Divide 50 by half and add 20. What is the result?</h1>
+			<br /> 
+			<input type="radio" id="ques4opt1" name="ques4" value="ques4radio1" /> 120 
+			<br /> <br /> 
+			<input type="radio" id="ques4opt2" name="ques4" value="ques4radio2" /> 45 
+			<br /> <br /> 
+			<input type="radio" id="ques4opt3" name="ques4" value="ques4radio3" /> 50/45
+			<br /> <br />
+			</div>
+
+			<div class ="question5">
+			<h1>5. You are in a race and you overtake the person who is in
+				second place. What is your position now?</h1>
+			<br /> 
+			<input type="radio" id="ques5opt1" name="ques5" value="ques5radio1" /> 1st
+			<br /> <br /> 
+			<input type="radio" id="ques5opt2" name="ques5" value="ques5radio2" /> 2nd 
+			<br /> <br /> 
+			<input type="radio" id="ques5opt3" name="ques5" value="ques5radio3" /> 3rd
+			<br /> <br /> 
+			</div>
+			
+			
+			<input type="button" name="submit" value="Submit" onclick ="formaction()" align="middle" />
+		</form>
+		<br /> <br />
+		
+		<h2 style="font-size: 22px; text-align: center" id="result"> Result</h2>
+
+		<div id="footer" style="margin-top: 100px; width: 500px">
+			<jsp:include page="footer.jsp"></jsp:include>
+		</div>
+		
 	</div>
 
 </body>

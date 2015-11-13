@@ -19,26 +19,36 @@
 
 	</div>
 
+
+
 	<div class="right">
-		<h1 style="font-size: 22px; text-align: center;">Spot any 3
-			differences between the two images.</h1>
+		<h1 style="font-size: 22px; text-align: center">Spot the
+			differences between the two images</h1>
+
 		<br /> <br /> <br /> <img
-			style="margin-left: 20px; padding-top: 0px" src="images/imagepuzzles/men.jpg"
-			usemap="#differences" />
+			style="margin-left: 20px; padding-top: 0px"
+			src="images/imagepuzzles/location.jpg" usemap="#alters" />
+		<map name="alters">
+			<area alt="" shape="rect" coords="423,403,481,473"
+				href="javascript: handleEvent()" style="cursor: default" />
+			<area alt="" shape="rect" coords="605,451,633,472"
+				href="javascript: handleEvent()" style="cursor: default" />
+			<area alt="" shape="rect" coords="471,323,508,367"
+				href="javascript: handleEvent()" style="cursor: default" />
+			<area alt="" shape="rect" coords="756,367,782,390"
+				href="javascript: handleEvent()" style="cursor: default" />
+			<area alt="" shape="rect" coords="771,286,784,295"
+				href="javascript: handleEvent()" style="cursor: default" />
+			<area alt="" shape="rect" coords="691,50,657,79"
+				href="javascript: handleEvent()" style="cursor: default" />
+			<area alt="" shape="rect" coords="697,148,719,164"
+				href="javascript: handleEvent()" style="cursor: default" />
+			<area alt="" shape="circle" coords="647,136,9"
+				href="javascript: handleEvent()" style="cursor: default" />
+			<area alt="" shape="rect" coords="471,94,433,135"
+				href="javascript: handleEvent()" style="cursor: default" />
 
-		<map name="differences">
-			<area alt="" shape="rect" coords="555,300,580,318"
-				href="javascript: handleEvent()" style="cursor: default" />
-			<area alt="" shape="rect" coords="623,306,650,320"
-				href="javascript: handleEvent()" style="cursor: default" />
-			<area alt="" shape="rect" coords="745,50,750,100"
-				href="javascript: handleEvent()" style="cursor: default" />
-			<area alt="" shape="circle" coords="599,258,8"
-				href="javascript: handleEvent()" style="cursor: default" />
-			<area alt="" shape="circle" coords="520,275,10"
-				href="javascript: handleEvent()" style="cursor: default" />
 		</map>
-
 		<br /> <br /> <br /> <br />
 		<h2 style="font-size: 22px; text-align: center" id="found"></h2>
 		<h1 style="font-size: 22px; text-align: center">
