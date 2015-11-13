@@ -6,24 +6,19 @@
 <link rel="stylesheet" type="text/css" href="basic.css" />
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-
+<script type="text/javascript" src="close.js"></script>
 </head>
-<body onbeforeunload="doUnload()" onmousedown="somefunction()">
-	<script type="text/javascript" src="close.js"></script>
+<body onunload="doUnload()" onmousedown="somefunction()">
 	<div class="left">
-
 		<jsp:include page="menu.jsp"></jsp:include>
-
 	</div>
 
 	<div class="right">
-
 		<img src="images/contact.gif" style="border: none; margin: 0;"
 			alt="contact" /> <br /> <br />
-
-		<h2 style="font-size:16px; font-weight: bolder;">Villanova University</h2>
-		
-		<h4 style="font-size:13px;">
+		<h2 style="font-size: 16px; font-weight: bolder;">Villanova
+			University</h2>
+		<h4 style="font-size: 13px;">
 			800 Lancaster Ave<br />Villanova, PA 19085<br /> <a
 				href="tel:6105194500">(610) 519-4500</a>&nbsp;&nbsp;&nbsp;
 		</h4>
@@ -32,14 +27,10 @@
 				marginwidth="0" width="442" height="353"
 				src="https://maps.google.com/maps?hl=en&q=villanova university&ie=UTF8&t=terrain&z=6&iwloc=B&output=embed">
 			</iframe>
-
 		</span>
 		<div id="footer" style="margin-top: 100px; width: 500px">
 			<jsp:include page="footer.jsp"></jsp:include>
 		</div>
 	</div>
-
-
-
 </body>
 </html>
