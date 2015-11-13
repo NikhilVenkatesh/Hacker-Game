@@ -35,8 +35,8 @@ function formaction() {
 				}
 			}
 		}
-		alert(opt_value[1] + " " + opt_value[2] + " " + opt_value[3] + " "
-				+ opt_value[4] + " " + opt_value[5]);
+		//alert(opt_value[1] + " " + opt_value[2] + " " + opt_value[3] + " "
+		//		+ opt_value[4] + " " + opt_value[5]);
 
 		if (opt_value[1] == "ques1radio1" && opt_value[2] == "ques2radio2"
 				&& opt_value[3] == "ques3radio3"
@@ -46,26 +46,31 @@ function formaction() {
 			document.getElementById("result").innerHTML ="Congratulations!! you answered all questions correctly";
 		}
 
-		if (opt_value[1] != "ques1radio1") {
-			document.getElementById("result").innerHTML ="1st question answer is wrong";
+		else {
+			
+			document.getElementById("result").innerHTML ="<br /> One or more answers are wrong. Please try again.";
+
+		}
+		/*if (opt_value[1] != "ques1radio1") {
+			document.getElementById("result").innerHTML ="<br /> 1st question answer is wrong";
 
 		}
 		if (opt_value[2] != "ques2radio2") {
-			document.getElementById("result").innerHTML +="\n 2nd question answer is wrong";
+			document.getElementById("result").innerHTML +="<br />2nd question answer is wrong";
 
 		}
 		if (opt_value[3] != "ques3radio3") {
-			document.getElementById("result").innerHTML +="\n3rd question answer is wrong";
+			document.getElementById("result").innerHTML +="<br />3rd question answer is wrong";
 
 		}
 		if (opt_value[4] != "ques4radio1") {
 			
-			document.getElementById("result").innerHTML +="\n4th question answer is wrong";
+			document.getElementById("result").innerHTML +="<br />4th question answer is wrong";
 
 		}
 		if (opt_value[5] != "ques5radio2") {
-			document.getElementById("result").innerHTML +="\n5th question answer is wrong";
-		}
+			document.getElementById("result").innerHTML +="<br />5th question answer is wrong";
+		}*/
 	}
 
 	else {
