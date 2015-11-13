@@ -6,16 +6,14 @@
 <link rel="stylesheet" type="text/css" href="basic.css" />
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="close.js"></script>
+<script type="text/javascript" src="formaction.js"></script>
 </head>
-<body onbeforeunload="doUnload()" onmousedown="somefunction()">
-	<script type="text/javascript" src="close.js"></script>
-	<script type="text/javascript" src="formaction.js"></script>
+
+<body onunload="doUnload()" onmousedown="somefunction()">
 	<div class="left">
-
 		<jsp:include page="menu.jsp"></jsp:include>
-
 	</div>
-
 	<div class="right" style="margin: 0px 100px; text-align: justify;">
 		<h1
 			style="background-color: gray; color: maroon; font-family: monospace; font-size: 25px; text-align: center;">
@@ -28,7 +26,6 @@
 						soldiers stay. Each soldier has 5 rooms. In each room there are 5
 						big tigers. Each big tiger has 5 little tigers. Each tiger has 4
 						legs. How many legs are there in the palace?</h1></li>
-
 				<br />
 				<input type="radio" id="ques1opt1" name="ques1" value="ques1radio1" />
 				3012
@@ -42,8 +39,6 @@
 				2000
 				<br />
 				<br />
-
-
 				<div class="question2">
 
 					<li><h1>There are eight identical-looking coins; one of
@@ -56,10 +51,7 @@
 					<input type="radio" id="ques2opt3" name="ques2" value="ques2radio3" />
 					Three <br /> <br />
 				</div>
-
-
 				<div class="question3">
-
 					<li><h1>
 							How many squares are there in the picture? <br /> <br /> <img
 								src="images/squares.png" />
@@ -69,20 +61,15 @@
 					<input type="radio" id="ques3opt3" name="ques3" value="ques3radio3" />
 					40 <br /> <br />
 				</div>
-
 				<div class="question4">
-
 					<li><h1>Divide 50 by half and add 20. What is the result?</h1></li>
-
 					<br /> <input type="radio" id="ques4opt1" name="ques4"
 						value="ques4radio1" /> 120 <br /> <br /> <input type="radio"
 						id="ques4opt2" name="ques4" value="ques4radio2" /> 45 <br /> <br />
 					<input type="radio" id="ques4opt3" name="ques4" value="ques4radio3" />
 					50/45 <br /> <br />
 				</div>
-
 				<div class="question5">
-
 					<li><h1>You are in a race and you overtake the person who
 							is in second place. What is your position now?</h1></li> <br /> <input
 						type="radio" id="ques5opt1" name="ques5" value="ques5radio1" />
@@ -90,24 +77,17 @@
 						value="ques5radio2" /> 2nd <br /> <br /> <input type="radio"
 						id="ques5opt3" name="ques5" value="ques5radio3" /> 3rd <br /> <br />
 				</div>
-
-
 				<p style="text-align: center;">
 					<input type="button" name="submit" value="Submit"
 						onclick="formaction()" />
 				</p>
 			</ol>
-
 		</form>
 		<br /> <br />
-
 		<h2 style="font-size: 22px; text-align: center" id="result"></h2>
-
 		<div id="footer" style="margin-top: 100px; width: 500px">
 			<jsp:include page="footer.jsp"></jsp:include>
 		</div>
-
 	</div>
-
 </body>
 </html>

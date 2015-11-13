@@ -8,10 +8,9 @@
 <link rel="stylesheet" type="text/css" href="basic.css" />
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="close.js"></script>
 </head>
-<body onbeforeunload="doUnload()" onmousedown="somefunction()">
-	<script type="text/javascript" src="close.js"></script>
-
+<body onunload="doUnload()" onmousedown="somefunction()">
 	<div class="left">
 		<jsp:include page="menu.jsp"></jsp:include>
 	</div>
@@ -35,6 +34,5 @@
 			</div>
 		</div>
 	</div>
-
 </body>
 </html>

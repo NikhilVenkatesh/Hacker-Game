@@ -9,43 +9,29 @@
 <link rel="stylesheet" type="text/css" href="basic.css" />
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="close.js"></script>
 </head>
 
-<body onbeforeunload="doUnload()" onmousedown="somefunction()">
-	<script type="text/javascript" src="close.js"></script>
-
+<body onunload="doUnload()" onmousedown="somefunction()">
 	<div class="left">
-
 		<jsp:include page="menu.jsp"></jsp:include>
-
-
 	</div>
 
 	<div class="right">
-
 		<img src="images/home.gif" style="border: none; margin: 0;"
 			alt="portfolio" />
-
-		<div class="content">i2
+		<div class="content">
 			<br> <br> <br>
-
 			<h1>What is Hacker Game?</h1>
-			<br> 
-
+			<br>
 			<p>This is a web site designed as a part of my IS to engage the
 				user with fun stuff, puzzles and games. Also there is a twist in the
 				tale. As you are now with us, there is no exit from here. Wanna try?
 				Have luck :)</p>
-
 			<div id="footer" style="margin-top: 100px; width: 500px">
 				<jsp:include page="footer.jsp"></jsp:include>
 			</div>
-
-
 		</div>
-
 	</div>
 </body>
-
-
 </html>
