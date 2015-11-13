@@ -6,7 +6,19 @@ function handleEvent() {
 	if (handleEvent.uniqueID == 3) {
 
 		document.getElementById("found").innerHTML = "You have successfully found the differences";
-		document.getElementById("Link").href = "next.jsp";
+		if(window.location.pathname=="/Hacker/imagegames.jsp"){
+			document.getElementById("Link").href = "watch.jsp";
 
+		}
+
+		else if(window.location.pathname=="/Hacker/watch.jsp"){
+			document.getElementById("Link").href = "location.jsp";
+		}
+		else {
+			alert("Congratulations!! You have completed all the levels in Image Games. click \"Next Game\"");
+			document.getElementById("Link").href = "qagames.jsp";
+		}
+		
+			
 	}
 }

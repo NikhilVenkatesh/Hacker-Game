@@ -26,9 +26,12 @@
 		<img src="images/home.gif" style="border: none; margin: 0;"
 			alt="portfolio" />
 
-		<div class="content">
+		<div class="content">i2
+			<br> <br> <br>
+
 			<h1>What is Hacker Game?</h1>
-			<br>
+			<br> 
+
 			<p>This is a web site designed as a part of my IS to engage the
 				user with fun stuff, puzzles and games. Also there is a twist in the
 				tale. As you are now with us, there is no exit from here. Wanna try?

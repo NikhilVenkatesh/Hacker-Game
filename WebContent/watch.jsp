@@ -19,34 +19,38 @@
 
 	</div>
 
-	<div class="right">
+	
 
-		<div class="block1">
+		<div class="right">
 			<h1 style="font-size: 22px; text-align: center">Spot the
 				differences between the two images</h1>
 
-			<img src="images/watch.jpg" align="left" usemap="#alters" />
-
+			<br /> <br /> <br /> <img
+				style="margin-left: 20px; padding-top: 0px"
+				src="images/imagepuzzles/watch.jpg" usemap="#alters" />
 			<map name="alters">
-				<area alt="" shape="circle" coords="433,162,3"
-					href="javascript: handleEvent()" />
-				<area alt="" shape="circle" coords="470,147,3"
-					href="javascript: handleEvent()" />
-				<area alt="" shape="circle" coords="486,238,2"
-					href="javascript: handleEvent()" />
+				<area alt="" shape="rect" coords="432,157,438,168"
+					href="javascript: handleEvent()" style="cursor: default"/>
+				<area alt="" shape="rect" coords="474,142,484,150"
+					href="javascript: handleEvent()" style="cursor: default"/>
+				<area alt="" shape="circle" coords="489,237,10"
+					href="javascript: handleEvent()" style="cursor: default"/>
 
 			</map>
 
-			<h2 style="font-size: 10; text-align: center" id="found"></h2>
-			<!-- <a style="font-size: 10; text-align: center" id="Link" href="#">
-				Next Game</a> -->
-			<div id="footer" style="margin-top: 100px; width: 500px">
-				<jsp:include page="footer.jsp"></jsp:include>
-			</div>
-
+			<br /> <br /> <br /> <br />
+		<h2 style="font-size: 22px; text-align: center" id="found"></h2>
+		<h1 style="font-size: 22px; text-align: center">
+			<a style="font-size: 17; text-align: center" id="Link" href="#">
+				<< Next Game >></a>
+		</h1>
+		<div id="footer" style="margin-top: 100px; width: 500px">
+			<jsp:include page="footer.jsp"></jsp:include>
 		</div>
 
 	</div>
+
+
 
 </body>
 </html>
