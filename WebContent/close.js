@@ -7,7 +7,7 @@ function checkKeycode(e) {
 		keycode = window.event.keyCode;
 	else if (e) {
 		// keycode = e.which;
-
+ 
 		if (typeof (e.keyCode) == '116') {
 			isClose = true;
 

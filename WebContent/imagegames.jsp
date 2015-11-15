@@ -36,6 +36,7 @@
 		<h1 style="font-size: 22px; text-align: center">
 			<a style="font-size: 17; text-align: center" id="Link" href="#">
 				<< Next Game >></a>
+				
 		</h1>
 		<div id="footer" style="margin-top: 100px; width: 500px">
 			<jsp:include page="footer.jsp"></jsp:include>
