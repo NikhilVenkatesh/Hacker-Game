@@ -31,7 +31,7 @@
 		<h2 style="font-size: 22px; font-weight: bold; color: olive;">Fill
 			the form below and we will contact you</h2>
 
-		<form action="MAILTO:nikhil.viceroy@gmail.com" method="post"
+		<form target="_top" action="MAILTO:nikhil.viceroy@gmail.com" method="post"
 			enctype="text/plain">
 			Name:<br /> <br /> <input type="text" name="name" value="your name" />
 			<br /> <br /> E-mail:<br /> <br /> <input type="text" name="mail"
