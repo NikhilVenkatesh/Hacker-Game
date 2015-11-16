@@ -43,8 +43,8 @@ function formaction() {
 				&& opt_value[4] == "ques4radio1"
 				&& opt_value[5] == "ques5radio2") {
 
-			document.getElementById("result").innerHTML ="Congratulations!! you answered all questions correctly";
-		}
+			document.getElementById("result").innerHTML ="Congratulations!! you answered all questions correctly. Click \"Next Page\" ";
+			document.getElementById("navigate").href="qagames2.jsp";		}
 
 		else {
 			

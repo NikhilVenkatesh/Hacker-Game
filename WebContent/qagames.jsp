@@ -80,7 +80,8 @@
 				<p style="text-align: center;">
 					<input type="button" name="submit" value="Submit"
 						onclick="formaction()" />
-				</p>
+				</p><br/><br/>
+				<center><a id="navigate" style="font-size:22px; " href="">Next page</a></center>
 			</ol>
 		</form>
 		<br /> <br />
